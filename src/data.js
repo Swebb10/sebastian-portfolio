@@ -40,25 +40,18 @@ export const projects = [
     link: '',
   },
   {
-    name: 'Plataforma Marketplace Agropecuario',
-    description:
-      'Plataforma web para comercialización de productos agropecuarios con gestión de bases de datos relacionales y carga dinámica mediante AJAX.',
-    stack: ['PHP', 'MySQL', 'AJAX', 'HTML5'],
-    link: '',
-  },
-  {
     name: 'LifeLevel App',
     description:
       'Aplicación web PWA de progreso personal gamificado con sistema de niveles, XP, metas por categorías, rachas y mensajes motivacionales.',
     stack: ['React', 'Vite', 'localStorage'],
-    link: '',
+    link: 'https://lifelevel-app.vercel.app/',
   },
   {
-    name: 'Sistema de Gestión para Complejo Deportivo',
+    name: 'FutManager',
     description:
       'Aplicación web tipo SaaS para cancha sintética con reservas por horario, finanzas, hojas de control mensual y autenticación por roles.',
     stack: ['React', 'Vite', 'localStorage'],
-    link: '',
+    link: 'https://area-fit-bsas.vercel.app/',
   },
 ]
 

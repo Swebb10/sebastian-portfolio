@@ -137,6 +137,7 @@ function About() {
           <div className="portrait-card glass">
             <img src="./profile-placeholder.svg" alt="Placeholder de foto de perfil" />
           </div>
+          <br></br>
           <div className="info-card glass">
             <div>
               <span>Ubicación</span>
@@ -165,6 +166,7 @@ function Experience() {
           <p className="eyebrow">Experiencia</p>
           <h2>Trayectoria con impacto operativo</h2>
         </div>
+        <br />
 
         <div className="timeline">
           {experience.map((item) => (
@@ -189,6 +191,7 @@ function Projects() {
           <p className="eyebrow">Proyectos</p>
           <h2>Construidos para resolver necesidades reales</h2>
         </div>
+        <br />
 
         <div className="cards-grid">
           {projects.map((project) => (
@@ -226,6 +229,7 @@ function Skills() {
           <p className="eyebrow">Habilidades</p>
           <h2>Base técnica orientada a desarrollo y operación</h2>
         </div>
+        <br />
 
         <div className="skills-grid">
           {skills.map((skill) => (
@@ -248,6 +252,7 @@ function Education() {
           <p className="eyebrow">Educación</p>
           <h2>Formación académica</h2>
         </div>
+        <br />
 
         <div className="education-list">
           {education.map((item) => (
