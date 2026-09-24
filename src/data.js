@@ -51,7 +51,7 @@ export const projects = [
     description:
       'Aplicación web tipo SaaS para cancha sintética con reservas por horario, finanzas, hojas de control mensual y autenticación por roles.',
     stack: ['React', 'Vite', 'localStorage'],
-    link: 'https://area-fit-bsas.vercel.app/',
+    link: 'https://fut-manager-bsas.vercel.app/login',
   },
   {
     name: 'Polyglot App',
