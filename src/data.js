@@ -37,7 +37,7 @@ export const projects = [
     description:
       'Aplicación para control de activos municipales con arquitectura basada en roles y módulo de auditoría de seguridad que registra IPs e intentos de acceso.',
     stack: ['PHP', 'MySQL', 'JavaScript', 'CSS', 'HTML5'],
-    link: '',
+    link: 'Proyecto interno de la Municipalidad de Buenos Aires. No disponible públicamente.',
   },
   {
     name: 'LifeLevel App',
