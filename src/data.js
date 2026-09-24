@@ -53,6 +53,13 @@ export const projects = [
     stack: ['React', 'Vite', 'localStorage'],
     link: 'https://area-fit-bsas.vercel.app/',
   },
+  {
+    name: 'Polyglot App',
+    description:
+      'Aplicación web de aprendizaje de idiomas con sistema de aprendizaje al estilo de los poliglotas, con tarjetas de vocabulario, niveles y progreso de usuario.',
+    stack: ['React', 'Vite', 'localStorage'],
+    link: 'https://polyglot-rose-nine.vercel.app/',
+  },
 ]
 
 export const skills = [
