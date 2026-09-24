@@ -59,6 +59,13 @@ export const projects = [
     stack: ['React', 'Vite', 'localStorage'],
     link: 'https://polyglot-rose-nine.vercel.app/',
   },
+    {
+    name: 'Forma - GYM Health Tracker',
+    description:
+      'Aplicación web de seguimiento de hábitos saludables y rutinas de ejercicio, con registro de progreso, metas y estadísticas personalizadas.',
+    stack: ['React', 'Vite', 'localStorage'],
+    link: 'https://forma-gym-health-tracker.vercel.app',
+  },
 ]
 
 export const skills = [
