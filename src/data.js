@@ -8,7 +8,7 @@ export const personal = {
   english: 'C1 Avanzado (Certificado)',
   tagline: 'Construyo soluciones web claras, funcionales y seguras, con foco en experiencia, estructura y detalle técnico.',
   profile:
-    'Estudiante de Ingeniería en Sistemas con experiencia técnica en desarrollo web y gestión de bases de datos. Actualmente realizo práctica profesional en el sector gubernamental, donde he desarrollado módulos de gestión vehicular y sistemas de auditoría de usuarios. Tengo un fuerte interés en seguridad informática y una rápida capacidad de adaptación a nuevos entornos tecnológicos.',
+    'Estudiante de Ingeniería en Sistemas con experiencia técnica en desarrollo web y gestión de bases de datos. Experiencia adquirida en práctica profesional en el sector gubernamental, donde desarrollé módulos de gestión vehicular y sistemas de auditoría de usuarios. Tengo un fuerte interés en cloud computing y una rápida capacidad de adaptación a nuevos entornos tecnológicos.',
   github: 'https://github.com/',
   linkedin: 'https://linkedin.com/',
   cvPath: './cv-sebastian-webb.pdf',
