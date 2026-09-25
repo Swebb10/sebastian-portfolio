@@ -7,11 +7,18 @@
       name="description"
       content="Portafolio web personal de Sebastián Webb Vargas, estudiante de Ingeniería en Sistemas Computacionales."
     />
+    <script>
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        document.documentElement.dataset.theme = ['light', 'dark'].includes(savedTheme)
+          ? savedTheme : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      } catch { document.documentElement.dataset.theme = 'light'; }
+    </script>
     <title>Sebastián Webb Vargas | Portafolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,500&display=swap"
       rel="stylesheet"
     />
   </head>

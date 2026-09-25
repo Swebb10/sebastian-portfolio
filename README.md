@@ -13,7 +13,8 @@ El diseño sigue una línea:
 - dark/light mode
 - tipografías: **Playfair Display**, **DM Sans**, **DM Mono**
 - sistema de variables CSS por tema
-- acento azul refinado, sobrio y profesional
+- composición editorial, bloques visuales amplios y acento cobre
+- portadas gráficas originales para cada proyecto
 
 ## Estructura del proyecto
 
@@ -61,8 +62,8 @@ Toda la identidad visual está gobernada por variables CSS en `styles.css`.
 
 Hay dos temas:
 
-- **dark** con azul refinado `#4A90D9`
-- **light** con un azul más profundo y sobrio
+- **dark** con fondo grafito verdoso `#171B19` y cobre claro `#D3A27C`
+- **light** con fondo marfil `#F4F1EB` y cobre `#865031`
 
 Las variables controlan:
 
@@ -81,7 +82,7 @@ La interfaz parte desde celular y escala hacia tablet y desktop con `@media quer
 
 ### 4. Animaciones
 
-Las animaciones de entrada usan `IntersectionObserver`, implementado en `src/hooks.js`, para aplicar un reveal suave cuando cada bloque entra en viewport.
+Las animaciones de entrada usan `IntersectionObserver`, implementado en `src/hooks.js`. La portada tiene profundidad al desplazarse y la cabecera muestra el progreso de lectura. Se respeta `prefers-reduced-motion`, con desplazamiento natural y sin animaciones cuando el usuario lo solicita. El menú móvil permite navegar por todas las secciones y cerrarse con Escape.
 
 ### 5. Contenido editable
 
@@ -112,11 +113,11 @@ También reemplaza este archivo:
 
 por tu CV real manteniendo el mismo nombre.
 
-Si ya tienes una foto formal, reemplaza:
+El diseño actual utiliza un monograma y gráficos CSS originales. El archivo de retrato anterior se conserva como recurso opcional:
 
 - `public/profile-placeholder.svg`
 
-por tu imagen real, y ajusta en `App.jsx` si cambias el nombre del archivo.
+Puedes incorporarlo en `App.jsx` si deseas añadir un retrato.
 
 ## Instalación local
 
