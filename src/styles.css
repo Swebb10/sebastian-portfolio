@@ -196,3 +196,16 @@ h1 > span { display: block; }
 /* Keep intrinsic artwork sizes from widening narrow grid tracks. */
 .project-card, .project-info { min-width: 0; }
 .project-visual { width: 100%; }
+.analytics-owner-notice {
+  padding: 16px 24px;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 24px;
+}
+.analytics-owner-notice strong { color: var(--text); }
+.analytics-owner-notice a { color: var(--accent); text-decoration: underline; }
