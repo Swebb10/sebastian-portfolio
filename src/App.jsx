@@ -66,13 +66,14 @@ const projectVisuals = [
   { title: 'DEPORTE / OPERACIÓN', word: 'FutManager', sub: 'EL JUEGO, EN ORDEN', type: 'field' },
   { title: 'IDIOMAS / APRENDIZAJE', word: 'Polyglot', sub: 'UN MUNDO DE PALABRAS', type: 'language' },
   { title: 'BIENESTAR / HÁBITOS', word: 'Forma', sub: 'CONSTRUYE TU MEJOR VERSIÓN', type: 'fitness' },
+  { title: 'CONOCIMIENTO / CONEXIONES', word: 'CortexFlow', sub: 'CONECTA IDEAS. APRENDE MEJOR.', type: 'knowledge', featured: true },
 ]
 function Projects() {
   return <section id="projects" className="section-block projects-section"><div className="container">
-    <div className="heading-row"><SectionHeading number="02" label="TRABAJO SELECCIONADO">De la idea<br />a lo <em>funcional.</em></SectionHeading><p className="heading-note reveal">Cinco proyectos. Distintos desafíos.<br />El mismo cuidado por los detalles.</p></div>
+    <div className="heading-row"><SectionHeading number="02" label="TRABAJO SELECCIONADO">De la idea<br />a lo <em>funcional.</em></SectionHeading><p className="heading-note reveal">{projects.length} proyectos. Distintos desafíos.<br />El mismo cuidado por los detalles.</p></div>
     <div className="projects-grid">{projects.map((project, index) => {
       const visual = projectVisuals[index]
-      return <article className={`project-card project-${visual.type} reveal ${index === 0 ? 'project-featured' : ''}`} key={project.name}>
+      return <article className={`project-card project-${visual.type} reveal ${index === 0 || visual.featured ? 'project-featured' : ''}`} key={project.name}>
         <div className="project-visual" aria-hidden="true"><span className="visual-label">{visual.title}</span><div className={`project-drawing drawing-${visual.type}`}><i /><i /><i /><i /><i /></div><div className="visual-word">{visual.word}<small>{visual.sub}</small></div><span className="visual-index">0{index + 1}</span></div>
         <div className="project-info"><div className="project-title-row"><span className="project-number">0{index + 1}</span><h3>{project.name}</h3></div><p>{project.description}</p><div className="stack-list">{project.stack.map(tech => <span key={tech}>{tech}</span>)}</div>{project.link ? <a className="text-link project-link" href={project.link} target="_blank" rel="noreferrer" aria-label={`Explorar ${project.name} (abre en otra pestaña)`}>Explorar proyecto <Arrow /></a> : <span className="project-private">Proyecto institucional · Sin demo pública</span>}</div>
       </article>

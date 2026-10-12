@@ -35,36 +35,43 @@ export const projects = [
   {
     name: 'Sistema de Gestión Vehicular',
     description:
-      'Aplicación para control de activos municipales con arquitectura basada en roles y módulo de auditoría de seguridad que registra IPs e intentos de acceso.',
-    stack: ['PHP', 'MySQL', 'JavaScript', 'CSS', 'HTML5'],
+      'Sistema municipal para administrar vehículos, solicitudes de uso y mantenimientos, con acceso por roles, seguimiento de kilometraje, archivos adjuntos y reportes PDF. Incluye auditoría de seguridad para registrar IPs e intentos de acceso.',
+    stack: ['PHP', 'MySQL', 'JavaScript', 'HTML5', 'CSS', 'FPDF'],
   },
   {
     name: 'LifeLevel App',
     description:
-      'Aplicación web PWA de progreso personal gamificado con sistema de niveles, XP, metas por categorías, rachas y mensajes motivacionales.',
-    stack: ['React', 'Vite', 'localStorage'],
+      'PWA de organización personal con metas, hábitos, rachas y un sistema de XP y niveles. Integra notas y finanzas personales para registrar cuentas, movimientos, gastos fijos y metas de ahorro, con datos guardados en el navegador y soporte sin conexión.',
+    stack: ['React', 'JavaScript', 'Vite', 'CSS', 'vite-plugin-pwa', 'localStorage'],
     link: 'https://lifelevel-app.vercel.app/',
   },
   {
     name: 'FutManager',
     description:
-      'Aplicación web tipo SaaS para cancha sintética con reservas por horario, finanzas, hojas de control mensual y autenticación por roles.',
-    stack: ['React', 'Vite', 'localStorage'],
+      'Plataforma SaaS multiempresa para gestionar canchas sintéticas: reservas por horario, caja diaria, inventario, finanzas y horas de empleados. Incluye acceso por roles, administración de negocios y suscripciones, con datos sincronizados en Firestore.',
+    stack: ['React', 'JavaScript', 'Vite', 'React Router', 'Firebase Auth', 'Cloud Firestore', 'Firebase Admin SDK', 'Vercel Functions'],
     link: 'https://fut-manager-bsas.vercel.app/login',
   },
   {
     name: 'Polyglot App',
     description:
-      'Aplicación web de aprendizaje de idiomas con sistema de aprendizaje al estilo de los poliglotas, con tarjetas de vocabulario, niveles y progreso de usuario.',
-    stack: ['React', 'Vite', 'localStorage'],
+      'Aplicación para aprender cinco idiomas mediante frases contextualizadas, repetición espaciada FSRS, diálogos y ejercicios de escucha y pronunciación. Incluye un tutor de IA ejecutado en el navegador, sesiones reanudables y progreso guardado localmente.',
+    stack: ['React', 'TypeScript', 'Vite', 'ts-fsrs', 'Transformers.js', 'Zod', 'IndexedDB', 'localStorage'],
     link: 'https://polyglot-rose-nine.vercel.app/',
   },
-    {
-    name: 'Forma - GYM Health Tracker',
+  {
+    name: 'Forma — Gym & Health Tracker',
     description:
-      'Aplicación web de seguimiento de hábitos saludables y rutinas de ejercicio, con registro de progreso, metas y estadísticas personalizadas.',
-    stack: ['React', 'Vite', 'localStorage'],
+      'Aplicación de entrenamiento y salud con rutinas por días, registro de sesiones, medidas corporales y bioimpedancia. Incluye gráficos de progreso y estimaciones de calorías y macronutrientes, con autenticación y datos privados sincronizados en Firebase.',
+    stack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Firebase Auth', 'Cloud Firestore', 'Recharts'],
     link: 'https://forma-gym-health-tracker.vercel.app',
+  },
+  {
+    name: 'CortexFlow',
+    description:
+      'Herramienta de estudio que transforma notas Markdown en mapas mentales interactivos y editables. Combina creación de conceptos, repaso activo y temporizador Pomodoro, con guardado local, deshacer y rehacer, y exportación de mapas en JSON.',
+    stack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'React Flow', 'react-markdown', 'localStorage'],
+    link: 'https://cortex-flow-ochre.vercel.app',
   },
 ]
 
